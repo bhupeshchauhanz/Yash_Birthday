@@ -402,6 +402,10 @@ body {
     line-height: 1.1;
     margin-bottom: 30px;
 }
+.main-title, .meee {
+    display: inline-block;
+}
+
 
 @keyframes titleGlow {
     from {
@@ -875,4 +879,5 @@ section.visible {
     .gallery-grid {
         column-count: 1;
     }
+
 }
