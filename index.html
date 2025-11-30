@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Yash!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Great+Vibes&family=Outfit:wght@300;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Music Player Control -->
+    <div class="music-control" id="musicControl">
+        <span class="icon">😴</span>
+        <span class="text">Wake Up! (Play Music)</span>
+    </div>
+    <audio id="bgMusic" loop>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="stars"></div>
+
+        <!-- Bunting Decoration -->
+        <div class="bunting-container">
+            <div class="bunting">
+                <div class="flag"></div>
+                <div class="flag"></div>
+                <div class="flag"></div>
+                <div class="flag"></div>
+                <div class="flag"></div>
+                <div class="flag"></div>
+                <div class="flag"></div>
+                <div class="flag"></div>
+                <div class="flag"></div>
+                <div class="flag"></div>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <!-- Virtual Cake -->
+            <div class="cake-container">
+                <div class="cake">
+                    <div class="plate"></div>
+                    <div class="layer layer-bottom"></div>
+                    <div class="layer layer-middle"></div>
+                    <div class="layer layer-top"></div>
+                    <div class="icing"></div>
+                    <div class="drip drip1"></div>
+                    <div class="drip drip2"></div>
+                    <div class="drip drip3"></div>
+
+                    <div class="candle" style="--i:0">
+                        <div class="flame"></div>
+                    </div>
+                    <div class="candle" style="--i:1">
+                        <div class="flame"></div>
+                    </div>
+                    <div class="candle" style="--i:2">
+                        <div class="flame"></div>
+                    </div>
+                    <div class="candle" style="--i:3">
+                        <div class="flame"></div>
+                    </div>
+                    <div class="candle" style="--i:4">
+                        <div class="flame"></div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="sub-title">
+                Hey Kumbhakarna (I mean Yash),
+            </p>
+            <span>
+                <h1 class="main-title">
+                    Happy Birthday!
+                </h1>
+                <h2 class="meee">
+                    🎂
+                </h2>   
+            </span>
+
+            <p>
+                I know your bed is your best friend, but today you have to cheat on it with the Cake!
+                May your year be as relaxing as your Sunday afternoon naps and as sweet as the dreams you have.
+            </p>
+            <p>
+                Get up, get dressed, and let's party! (You can sleep later).
+            </p>
+            <p class="signature">With Love, <br> Your Alarm Clock (Brother)</p>
+
+            <!-- Scroll Hint -->
+            <div class="scroll-hint">
+                <span>Scroll Down</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </div>
+
+        <!-- Floating Hearts -->
+        <div class="hearts-container">
+            <div class="heart">💛</div>
+            <div class="heart">💙</div>
+            <div class="heart">💜</div>
+            <div class="heart">💚</div>
+            <div class="heart">🧡</div>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <h2 class="section-title">
+            Memories <span>Gallery</span>
+            <div class="title-underline"></div>
+        </h2>
+        <div class="gallery-grid">
+            <div class="photo-card">
+                <img src="img/1.jpg" alt="Memory 1">
+            </div>
+            <div class="photo-card">
+                <img src="img/2.jpg" alt="Memory 2">
+            </div>
+            <div class="photo-card">
+                <img src="img/3.jpg" alt="Memory 3">
+            </div>
+            <div class="photo-card">
+                <img src="img/4.jpg" alt="Memory 4">
+            </div>
+            <div class="photo-card">
+                <img src="img/5.jpg" alt="Memory 5">
+            </div>
+            <div class="photo-card">
+                <img src="img/6.jpg" alt="Memory 6">
+            </div>
+        </div>
+    </section>
+
+    <!-- Wishes Section -->
+    <section class="wishes-section">
+        <div class="wishes-content">
+            <div class="message-box">
+                <p>
+                    "Another year older, but are you another year wiser? 🤔 Just kidding!
+                    Wishing you a day filled with laughter, joy, and maybe a little bit of work (just a little).
+                    May all your dreams come true, even the weird ones!"
+                </p>
+                <p>
+                    Keep shining and being the amazing person you are.
+                </p>
+                <p class="signature">Best Wishes, <br> Your Favorite Coder</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Enlarged photo">
+    </div>
+
+    <!-- Balloons Container -->
+    <div id="balloons-container"></div>
+
+    <footer>
+        <p>Made with 💤 for Yash</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
